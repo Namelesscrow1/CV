@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Circulo</title>
+</head>
+<body>
+	<form>
+		<input type="text" id="operacion">
+		<input type="button" value="Multiplicar" onclick="alert(Multiplicacion())">
+	</form>
+
+	<script type="text/javascript">
+
+		var Multiplicacion = function (){
+			var operacion = document.getElementById("operacion").value;
+
+			var cual= 0;
+			var concatenado= "";
+			var numeros=[];
+
+			for (var i = 0; i < operacion.length; i++) {
+				var caracter = operacion[i];
+
+				if (caracter==",") {
+					numeros[cual]=concatenado
+					concatenado="";
+					cual++
+				}
+				else{
+					concatenado=concatenado+caracter;
+				}
+
+			}
+			numeros[cual]=concatenado
+			var resultado= numeros[0]*numeros[1];
+			return resultado;
+
+
+		}
+
+	</script>
+	
+</body>
+</html>

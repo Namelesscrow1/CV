@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>nodos</title>
+</head>
+<body>
+	<ol>
+		<li>antes</li>
+		<li>despues</li>
+	</ol>
+	<script type="text/javascript">
+		var elemento = document.createElement("li"),
+			contenido = createTextNode("nuevotexto");
+		elemento.appendchild(contenido);
+
+		var padre = document.getElementById("lista")
+		padre.appendchild(elemento);
+		
+	</script>
+</body>
+</html>

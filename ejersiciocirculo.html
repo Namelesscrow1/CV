@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Circulo</title>
+</head>
+<body>
+	<form>
+		<input type="text" id="radio">
+		<input type="button" value="Calcular" onclick="alert(Multiplicacion())">
+	</form>
+
+	<script type="text/javascript">
+
+		var Multiplicacion = function (){
+			var radio = document.getElementById("radio").value;
+
+		var operacion = Math.pow(radio,2)*Math.PI
+
+		var resultado = operacion;
+
+		return resultado;
+
+		}
+
+	</script>
+	
+</body>
+</html>

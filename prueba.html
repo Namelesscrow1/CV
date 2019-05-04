@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>polindromo</title>
+</head>
+<body>
+	<script language=javascript>
+
+		var nombre = prompt("ingresa tu palindromo");
+		var polindromo = "";
+
+
+		for( var i = nombre.length-1; i >= 0; i-- ){
+
+
+			polindromo=polindromo.concat(nombre[i]);
+
+		}		
+
+		if(nombre==polindromo){
+			alert("si es un palindromo");
+		}
+
+		else{
+			alert("no es un palindromo");
+		}
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>practicaanimales</title>
+</head>
+<body>
+
+	<form action="">
+		<span>Animal 1:</span>
+		<input type="text" id="animal1">
+		<span>Animal 2:</span>
+		<input type="text" id="animal2">
+		<input type="button" value="Mezclar" onclick="alert(Suma())">
+	</form>
+	<script type="text/javascript">
+
+			var Suma = function(){
+
+			var animal1 = document.getElementById("animal1").value;
+			var animal2 = document.getElementById("animal2").value;
+
+			var resultado = "";
+
+			for (var i = 0; i < animal1.length/2; i++) {
+				resultado=resultado+animal1[i]
+			}
+			for (var i = animal2.length/2; i < animal2.length; i++) {
+				resultado=resultado+animal2[i]
+			}
+
+			return resultado;
+
+			}
+		
+
+		
+
+		
+
+
+	</script>
+	
+</body>
+</html>

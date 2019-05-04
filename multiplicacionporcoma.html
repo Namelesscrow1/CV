@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Circulo</title>
+</head>
+<body>
+	<form>
+		<input type="text" id="operacion">
+		<input type="button" value="Multiplicar" onclick="alert(Multiplicacion())">
+	</form>
+
+	<script type="text/javascript">
+
+		var Multiplicacion = function (){
+			var operacion = document.getElementById("operacion").value;
+
+			operacion.split(',');
+
+			var numeros= operacion.split(',');
+
+			var resultado= numeros[0]*numeros[1];
+
+			return resultado;
+
+		}
+
+	</script>
+	
+</body>
+</html>

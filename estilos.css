@@ -1,0 +1,271 @@
+body {
+  background-color: #2a2a2a;
+  font-family: Quicksand,sans-serif;
+  background-image: url(background.jpg);
+}
+
+ #derecha {
+
+top: 0px;
+
+right: -56px;
+
+width: 56px;
+
+position: absolute;
+
+display: block;
+
+height: 200px;
+
+background: blue;
+ }
+
+#contenedor {
+  width: auto;
+  max-width: 1280px;
+  margin: 0 auto;
+  min-height: 600px;
+}
+#logo{
+	margin-left: 50px;
+	float: left;
+  display: block;
+  height: 30px;
+}
+#menu{
+	margin-top: 0;
+	display: block;
+	color: white;
+	float: right;
+  font-weight: bolder;
+  margin-right: 50px;
+  height: 30px;
+}
+#menu li{
+	display: inline-block;
+  margin: 0 10px;
+  line-height: 30px;
+}
+#menu li a{
+	display: block;
+	color: white;
+	text-decoration: none;
+}
+#menu li a:hover{
+	text-decoration: underline;
+}
+#contenido{
+	padding: 20px;
+	background-color: #373737;
+    color: white;
+    max-width: 866px;
+    margin: 0 auto;
+    position: relative;
+}
+#titulo{
+	width: auto;
+	background-color: #d14b4a;
+  padding: 50px;
+  min-height: 200px;
+}
+#foto{
+	display:block;
+	border-radius: 50%;
+	width: 25%;
+  float: left;
+}
+#info{
+  width: 75%;
+	display: block;
+	float: right;
+}
+#info h2, #info h3, #info #social{
+	margin-left: 50px;
+}
+#info h2{
+	font-weight: normal;
+	font-size: 2.688em;
+  margin-bottom: .2em;
+}
+#info h3{
+	color: #bcbcbc;
+  font-weight: normal;
+  font-size: 16px;
+}
+#info .icon{
+	margin-top: 20px;
+	margin-right: 20px;
+}
+.clear{
+	clear: both;
+}
+#sobremi {
+    padding: 20px;
+    line-height: 30px;
+}
+#sobremi h2{
+	font-weight: normal;
+	font-size: 30px;
+	margin-bottom: 50px;
+}
+.borde{
+	border-bottom: 1px solid #1f1f1f;
+}
+#principal {
+	padding: 20px;
+}
+#caja1 {
+	float: left;
+	width: 65%;
+	text-align: left;
+	white-space: nowrap;
+	border-right-width: 30px;
+}
+#caja2 {
+	float: right;
+	width: 35%;
+}
+.subtitulo {
+	font-size: 21px;
+	font-weight: 400;
+	margin-bottom: 30px;
+}
+#infoo {
+	font-size: 14px;
+	letter-spacing: 1px;
+	line-height: 22px;
+	margin-bottom: 0px;
+	margin-top: 22px;
+}
+.interno {
+	clear: left;
+	float: left;
+	font-size: 14;
+	font-weight: 700;
+	width: 30px;
+}
+dd {
+	font-size: 10;
+	margin-left: 300px;
+	text-align: right;
+	line-height: 20px;
+}
+.text-progress{
+	width: 58%;
+	float: right;
+	margin-top: 32px;
+	color: #bcbcbc;
+}
+.clear{
+	both: 0 auto;
+}
+progress[value] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  width: 40%;
+  height: 17px;
+  color: black;
+  border-radius: 5px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.strong{
+	margin-bottom: 20px;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+progress[value]::-webkit-progress-value {
+  background-color: black;
+  background-image: linear-gradient(
+    -45deg,
+    transparent 25%,
+    rgb(209 , 75, 74) 25%,
+    rgb(209 , 75, 74) 50%,
+    transparent 50%,
+    transparent 75%,
+    rgb(209 , 75, 74) 75%,
+    rgb(209 , 75, 74)
+  ), linear-gradient( to bottom, rgba(255, 255, 255, .25), rgba(0,0,0,.2));
+  background-size: 40px 40px, 100% 100%;
+  border-radius: 5px;
+  -webkit-animation: animatestripes 5s linear infinite;
+        animation: animatestripes 5s linear infinite;
+}
+
+progress[value]::-moz-progress-bar {
+  background-color: black;
+  background-image: linear-gradient(
+    -45deg,
+    transparent 25%,
+    rgb(209 , 75, 74) 25%,
+    rgb(209 , 75, 74) 50%,
+    transparent 50%,
+    transparent 75%,
+    rgb(209 , 75, 74) 75%,
+    rgb(209 , 75, 74)
+  ), linear-gradient( to bottom, rgba(255, 255, 255, .25), rgba(0,0,0,.2));
+  background-size: 40px 40px, 100% 100%;
+  border-radius: 5px;
+  animation: animatestripes 5s linear infinite;
+}
+
+@-webkit-keyframes animatestripes {
+   100% { background-position: -40px 0;  }
+}
+
+@keyframes animatestripes {
+   100% { background-position: -40px 0;  }
+}
+.habilidades1{
+	width: 30%;
+	text-align: center;
+    float: left;
+}
+.c100 .bar, .c100 .fill {
+    border-color: rgb(209 , 75, 74) !important;
+}
+.c100:hover > span {
+    color: rgb(209 , 75, 74) !important;
+}
+.c100 {
+    background-color: black !important;
+}
+.c100 > span {
+    color: grey !important;
+}
+.c100:after {
+    background-color: transparent !important;
+}
+#skills {
+    padding: 20px;
+}
+.w50 {
+    width: 60%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.caja {
+    padding: 10px;
+}
+.icono-interest {
+	color: rgb(209 , 75, 74) !important;
+}
+.interest-list {
+	clear: both;
+	list-style-type: none;
+	list-style-image: url('arrow-24-16.png');
+}
+.list {
+	width: 33.3%;
+	float: left;
+	font-size: 20px;
+	margin-bottom: 18px;
+}

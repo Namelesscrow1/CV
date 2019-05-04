@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>practicadados</title>
+</head>
+<body>
+
+	<form action="">
+		
+		<input type="button" value="lanzar dados" onclick="console.log(Dados())">
+	</form>
+	<script type="text/javascript">
+
+			var Dados = function(){
+
+			var lanzadas = [0,0,0,0,0,0];
+
+			for (var i = 0; i < 1000; i++) {
+
+
+			var numero1=Math.floor(Math.random() * 6)+1;
+				lanzadas[numero1-1]++
+
+
+			}
+
+			return lanzadas;
+
+			}
+		
+          
+		
+
+		
+
+
+	</script>
+	
+</body>
+</html>
